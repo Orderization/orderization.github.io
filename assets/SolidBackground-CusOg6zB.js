@@ -1,0 +1,1 @@
+import{e as a,o,c as s,n,_ as d}from"./app-D3r5cZGe.js";const t=a({__name:"SolidBackground",props:{suspended:{type:Boolean,default:!1},theme:{default:"dark"}},setup(e){return(r,c)=>(o(),s("div",{class:n(["solid-background",`solid-background--${e.theme}`]),"aria-hidden":"true"},null,2))}}),u=d(t,[["__scopeId","data-v-bbe6aea9"]]);export{u as default};
