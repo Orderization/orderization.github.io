@@ -1,0 +1,14 @@
+<!doctype html><html lang="en" data-download-base="/"><head><meta charset="utf-8"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Download</title><script>(() => {
+  const url = new URL(window.location.href);
+  const password = url.searchParams.get('pswd');
+  if (password === null) return;
+  url.searchParams.delete('pswd');
+  Object.defineProperty(window, '__siteEncryptedPassword', {
+    value: { path: url.pathname, resource: url.searchParams.get('file') || '', password }, configurable: true
+  });
+  const referrer = document.createElement('meta');
+  referrer.name = 'referrer';
+  referrer.content = 'no-referrer';
+  document.head.append(referrer);
+  window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
+})();</script><script type="module" src="/assets/encrypted-download-BfAJscKg.js"></script></head><body></body></html>

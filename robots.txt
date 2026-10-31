@@ -1,0 +1,3 @@
+Sitemap: https://kairui.ca/sitemap.xml
+User-agent:*
+Disallow:
